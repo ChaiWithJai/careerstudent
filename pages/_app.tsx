@@ -1,8 +1,10 @@
 import { AppProps } from 'next/app';
-import '../styles.css'
+import '../styles.css';
+import ParticlesBackground from '../components/Particles';
+
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return <><ParticlesBackground /><Component {...pageProps} /></>
 }
 
 export default MyApp
