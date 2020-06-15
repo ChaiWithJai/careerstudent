@@ -15,7 +15,10 @@ const Layout = ({ title }: Props) => (
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-    <TypeWriter />
+    <div className={styles.bodyContainer}>
+      <h1>Hey, I'm Jai</h1>
+      <TypeWriter />
+    </div>
   </div>
 )
 
