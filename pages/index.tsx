@@ -3,7 +3,8 @@ import Layout from '../components/Layout';
 import TypeWriter from '../components/TypeWriter';
 
 const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
+  <Layout title="Career Student">
+    <h1>Hey, I'm Jai</h1>
     <TypeWriter />
     <p>
       <Link href="/about">

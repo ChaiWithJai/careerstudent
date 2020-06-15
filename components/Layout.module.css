@@ -1,4 +1,20 @@
-.background {
-    background-color: fffff;
-    opacity: 10;
+.homeContainer {
+  height: 95vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.typeWriterTextContainer {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
 }
