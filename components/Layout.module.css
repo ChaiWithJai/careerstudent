@@ -1,15 +1,9 @@
 .homeContainer {
-  height: 95vh;
-  width: 100vw;
   display: flex;
   flex-direction: row;
-}
-
-.typeWriterTextContainer {
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
+  height: calc(100vh - 30px);
+  justify-content: center;
+  align-items: center;
 }
 
 .footer {

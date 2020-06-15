@@ -10,7 +10,7 @@ const TypeWriter: React.FC = () => {
       }, [count]);
 
    return (
-        <div className={styles.typeWriterTextContainer}>
+        <div>
             {count ? 
                 <Typist avgTypingDelay={50} onTypingDone={() => setCount(0)}>
                     <span className={styles.typeWriterText}> Hey, I'm Jai</span>

@@ -28,12 +28,11 @@ const Image: React.FC<IImageProps> = ({fileName}) => (
 )
 
 const Footer: React.FC = () => (
-    <footer className={styles.footer}>
-        <hr />
+    <div className={styles.footer}>
        {
            icons.map((icon, idx) => <Image key={`icon ${idx}`} fileName={icon}/>)
        }       
-    </footer>
+    </div>
 )
 
 export default Footer;
