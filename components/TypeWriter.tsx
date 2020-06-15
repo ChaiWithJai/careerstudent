@@ -10,13 +10,19 @@ const TypeWriter: React.FC = () => {
       }, [count]);
 
    return (
-    <>{count ? <Typist avgTypingDelay={50} onTypingDone={() => setCount(0)}>
-            <span className={styles.firstText}> Hey, I'm Jai</span>
-            <Typist.Backspace count={12} delay={800} />
-            <span> I like boxing</span>
-            <Typist.Backspace count={13} delay={800} />
-            <span> I also make a great cup of chai </span>
-    </Typist> : ''}</>
+        <div className={styles.typeWriterTextContainer}>
+            {count ? 
+                <Typist avgTypingDelay={50} onTypingDone={() => setCount(0)}>
+                    <span className={styles.typeWriterText}> Hey, I'm Jai</span>
+                    <Typist.Backspace count={12} delay={800} />
+                    <span className={styles.typeWriterText}> I like boxing</span>
+                    <Typist.Backspace count={13} delay={800} />
+                    <span className={styles.typeWriterText}> I also make a great cup of chai </span>
+                    <Typist.Backspace count={30} delay={800} />
+                </Typist> 
+            : 
+            ''}
+        </div>
 );
 }
 
