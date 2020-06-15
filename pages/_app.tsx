@@ -4,7 +4,7 @@ import ParticlesBackground from '../components/Particles';
 
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <><ParticlesBackground /><Component {...pageProps} /></>
+  return <div className="mainContainer"><ParticlesBackground /><Component {...pageProps} /></div>
 }
 
 export default MyApp

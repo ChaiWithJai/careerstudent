@@ -1,29 +1,23 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import Typist from "react-typist";
 import styles from "./TypeWriter.module.css"
 
-const TypeWriter: React.FC = () => {
-    const [count, setCount] = useState(1);
+const messages = [`I like stand up comedy`, `I love boxing`, `I also make a great cup of chai`, `I'm a Kanye stan`, `Let's connect!`]
 
-    useEffect(() => {
-        setCount(1);
-      }, [count]);
-
-   return (
-        <div className={styles.typeWriterTextContainer}>
-            {count ? 
-                <Typist avgTypingDelay={50} onTypingDone={() => setCount(0)}>
-                    <span className={styles.typeWriterText}> Hey, I'm Jai</span>
-                    <Typist.Backspace count={12} delay={800} />
-                    <span className={styles.typeWriterText}> I like boxing</span>
-                    <Typist.Backspace count={13} delay={800} />
-                    <span className={styles.typeWriterText}> I also make a great cup of chai </span>
-                    <Typist.Backspace count={30} delay={800} />
-                </Typist> 
-            : 
-            ''}
-        </div>
+const TypeWriter: React.FC = () => (
+    <Typist avgTypingDelay={50} cursor={{show: false}}>
+        <Typist.Delay ms={1000} />
+        {
+            messages.map((message, idx) => {
+                return (
+                    <div className={styles.typeWriterText} key={`message ${idx}`}>
+                        <span>{message}</span>
+                        {idx !== messages.length - 1 ? <Typist.Backspace count={message.length} delay={800} /> : <></>}
+                    </div>
+                )    
+            })
+        }
+    </Typist> 
 );
-}
 
 export default TypeWriter;
