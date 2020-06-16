@@ -34,7 +34,7 @@
   margin-bottom: 12px;
 }
 
-.blogContainer {
+.linkContainer {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -46,5 +46,14 @@
 }
 
 .blogText:hover {
+  color: red;
+}
+
+.portfolioText {
+  transform: rotate(90deg);
+
+}
+
+.portfolioText:hover {
   color: red;
 }
