@@ -7,7 +7,7 @@ const IndexPage = () => (
   <div className={styles.parentContainer}>
     <div className={styles.blogContainer}>
       <Link href="/blog">
-        <h1 className={styles.blogText}>Blog</h1>
+        <a className={styles.blogText}>Blog</a>
       </Link>
     </div>
     <div className={styles.bodyAndFooterContainer}>

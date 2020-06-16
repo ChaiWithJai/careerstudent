@@ -3,7 +3,7 @@ import Layout from '../components/Layout'
 
 const BlogPage = () => (
   <Layout title="Career Student">
-    <h1>About</h1>
+    <h1>Career Student</h1>
     <p>This is the about page</p>
     <p>
       <Link href="/">
