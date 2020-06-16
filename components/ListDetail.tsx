@@ -8,8 +8,8 @@ type ListDetailProps = {
 
 const ListDetail = ({ item: blog }: ListDetailProps) => (
   <div>
-    <h1>Detail for {blog.name}</h1>
-    <p>ID: {blog.id}</p>
+    <h1>{blog.name}</h1>
+    <p>{blog.body}</p>
   </div>
 )
 

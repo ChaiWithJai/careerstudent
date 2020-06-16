@@ -9,4 +9,5 @@ export type Blog = {
   name: string
   readingTime?: number
   metadata?: string
+  body?: string
 }
