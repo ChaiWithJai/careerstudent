@@ -7,4 +7,6 @@
 export type Blog = {
   id: number
   name: string
+  readingTime?: number
+  metadata?: string
 }

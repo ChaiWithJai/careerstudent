@@ -1,9 +1,9 @@
 import { GetStaticProps, GetStaticPaths } from 'next'
-
 import { Blog } from '../../interfaces'
 import { sampleBlogData } from '../../utils/sample-data'
 import Layout from '../../components/Layout'
 import ListDetail from '../../components/ListDetail'
+import styles from './blog.module.css'
 
 type Props = {
   item?: Blog
@@ -27,7 +27,9 @@ const StaticPropsDetail = ({ item, errors }: Props) => {
         item ? item.name : 'Blog Detail'
       } | Next.js + TypeScript Example`}
     >
-      {item && <ListDetail item={item} />}
+      <div className={styles.blogContainer}>
+        {item && <ListDetail item={item} />}
+      </div>
     </Layout>
   )
 }
