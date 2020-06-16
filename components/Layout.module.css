@@ -1,3 +1,15 @@
+.parentContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.bodyAndFooterContainer {
+  display: flex;
+  flex-direction: column;
+  width: calc(100vw - 100px);
+  align-items: center;
+}
+
 .homeContainer {
   display: flex;
   flex-direction: row;
@@ -20,4 +32,28 @@
   justify-content: center;
   align-items: flex-end;
   margin-bottom: 12px;
+}
+
+.linkContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.blogText {
+  transform: rotate(270deg);
+
+}
+
+.blogText:hover {
+  color: red;
+}
+
+.portfolioText {
+  transform: rotate(90deg);
+
+}
+
+.portfolioText:hover {
+  color: red;
 }
