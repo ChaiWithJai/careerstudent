@@ -7,13 +7,16 @@ type Props = {
 }
 
 const List = ({ items }: Props) => (
-  <ul>
+  <div>
     {items.map((item) => (
-      <li key={item.id}>
-        <ListItem data={item} />
-      </li>
+      <>
+        <h3 key={item.id}>
+          <ListItem data={item} />
+        </h3>
+        {item.metadata && <p>{item.metadata} | {item.readingTime} minute read </p>}
+      </>
     ))}
-  </ul>
+  </div>
 )
 
 export default List

@@ -5,6 +5,7 @@ import { Blog } from '../../interfaces'
 import { sampleBlogData } from '../../utils/sample-data'
 import Layout from '../../components/Layout'
 import List from '../../components/List'
+import styles from './blog.module.css';
 
 type Props = {
   items: Blog[]
@@ -12,17 +13,14 @@ type Props = {
 
 const WithStaticProps = ({ items }: Props) => (
   <Layout title="Blog">
-    <h1>Users List</h1>
-    <p>
-      Example fetching data from inside <code>getStaticProps()</code>.
-    </p>
-    <p>You are currently on: /blog</p>
-    <List items={items} />
-    <p>
-      <Link href="/">
-        <a>Go home</a>
-      </Link>
-    </p>
+    <div className={styles.blogContainer}>
+      <h1>Career Student</h1>
+      <div>
+        <h2>Personal Blog by <Link href="/"><a>Jai</a></Link></h2>
+        <p>Details of what I'm currently learning</p>
+      </div>
+      <List items={items} />
+    </div>
   </Layout>
 )
 
