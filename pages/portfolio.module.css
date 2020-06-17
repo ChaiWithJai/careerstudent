@@ -1,0 +1,18 @@
+.portfolioContainer {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    height: 90vh;
+    width: 70vw;
+    background-color: #ffffff;
+    border: 1px solid #0055ff;
+}
+
+.portfolioEntryContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 16px;
+    width: 800px;
+}
